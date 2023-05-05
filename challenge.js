@@ -1,17 +1,17 @@
 // Optionally: start with your code from LinkedList challenge.
 
-// program to implement stack data structure
+// program to implement stackk data structure
 class Stack {
     constructor() {
         this.items = [];
     }
     
-    // add element to the stack
+    // add element to the stackk
     add(element) {
         return this.items.push(element);
     }
     
-    // remove element from the stack
+    // remove element from the stackk
     remove() {
         if(this.items.length > 0) {
             return this.items.pop();
@@ -23,17 +23,17 @@ class Stack {
         return this.items[this.items.length - 1];
     }
     
-    // check if the stack is empty
+    // check if the stackk is empty
     isEmpty(){
        return this.items.length == 0;
     }
    
-    // the size of the stack
+    // the size of the stackk
     size(){
         return this.items.length;
     }
  
-    // empty the stack
+    // empty the stackk
     clear(){
         this.items = [];
     }
@@ -51,27 +51,27 @@ console.log(stackk.items);
 
 console.log(stackk.peek());
 
-console.log(stack.isEmpty());
+console.log(stackk.isEmpty());
 
-console.log(stack.size());
+console.log(stackk.size());
 
-stack.clear();
-console.log(stack.items);
-const stack = new Stack()
-stack.push(3)
-stack.push(5)
-console.log(stack.pop())
+stackk.clear();
+console.log(stackk.items);
+const stackk = new Stack()
+stackk.push(3)
+stackk.push(5)
+console.log(stackk.pop())
 // => 5
 
-stack.push(2)
-stack.push(7)
-console.log(stack.pop())
+stackk.push(2)
+stackk.push(7)
+console.log(stackk.pop())
 // => 7
 
-console.log(stack.pop())
+console.log(stackk.pop())
 // => 2
 
-console.log(stack.pop())
+console.log(stackk.pop())
 // => 3
 
 module.exports = Stack
