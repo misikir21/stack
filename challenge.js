@@ -1,13 +1,21 @@
 // Optionally: start with your code from LinkedList challenge.
 
 class Stack {
+  constructor()
+    {
+        this.items = [];
+    }
+ 
   push(number) {
     // your code here
-    return this.number.push(number);
+    this.items.push(number)
   }
   
   pop() {
     // your code here
+    if (this.items.length == 0)
+        return "Underflow";
+    return this.items.pop();
   }
 }
 
