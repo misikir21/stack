@@ -122,4 +122,4 @@ console.log(queue.remove())
 // => 7
 console.log(queue.remove())
 // => -1
-module.exports = Queue
+module.exports = Queue;
